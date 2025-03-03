@@ -32,7 +32,7 @@ docker pull ghcr.io/clnstrt/python:3.11
 ### Development Variant
 Includes additional tools helpful during development:
 ```sh
-docker pull ghcr.io/clnstrt/python:3.11
+docker pull ghcr.io/clnstrt/python:3.11-dev
 ```
 
 ## Usage Examples
