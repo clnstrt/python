@@ -26,42 +26,42 @@ CleanStart provides two image variants:
 ### Production Variant
 Minimal runtime variant optimized for production security:
 ```sh
-docker pull cleanstart/python:latest
+docker pull ghcr.io/clnstrt/python:3.11
 ```
 
 ### Development Variant
 Includes additional tools helpful during development:
 ```sh
-docker pull cleanstart/python:latest-dev
+docker pull ghcr.io/clnstrt/python:3.11
 ```
 
 ## Usage Examples
 
 ### Running an Interactive Python Shell
 ```sh
-docker run -it --rm cleanstart/python:latest
+docker run -it --rm ghcr.io/clnstrt/python:3.11
 ```
 
 ### Executing a Python Script
 ```sh
-docker run --rm -v $(pwd):/app -w /app cleanstart/python:latest python script.py
+docker run --rm -v $(pwd):/app -w /app ghcr.io/clnstrt/python:3.11 python script.py
 ```
 
 ### Accessing a Shell in the Development Variant
 ```sh
-docker run -it --entrypoint /bin/bash cleanstart/python:latest-dev
+docker run -it --entrypoint /bin/bash ghcr.io/clnstrt/python:3.11
 ```
 
 ### Installing Packages in Development Variant
 ```sh
-docker run -it --user root --entrypoint /bin/bash cleanstart/python:latest-dev
+docker run -it --user root --entrypoint /bin/bash ghcr.io/clnstrt/python:3.11
 ```
 
 > ⚠️ **Note:** Running containers as root is not recommended in production environments.
 
 ## Docker Hub Repository
 
-This image is available on Docker Hub: [cleanstart/python](https://hub.docker.com/r/cleanstart/python)
+This image is available on Docker Hub: [cleanstart/python]([https://hub.docker.com/r/cleanstart/python](https://hub.docker.com/repository/docker/cleanstart/python)
 
 ## License
 
