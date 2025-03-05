@@ -26,35 +26,35 @@ CleanStart provides two image variants:
 ### Production Variant
 Minimal runtime variant optimized for production security:
 ```sh
-docker pull ghcr.io/clnstrt/python:3.11
+docker pull ghcr.io/clnstrt/python:latest
 ```
 
 ### Development Variant
 Includes additional tools helpful during development:
 ```sh
-docker pull ghcr.io/clnstrt/python:3.11-dev
+docker pull ghcr.io/clnstrt/python:latest-dev
 ```
 
 ## Usage Examples
 
 ### Running an Interactive Python Shell
 ```sh
-docker run -it --rm ghcr.io/clnstrt/python:3.11
+docker run -it --rm ghcr.io/clnstrt/python:latest
 ```
 
 ### Executing a Python Script
 ```sh
-docker run --rm -v $(pwd):/app -w /app ghcr.io/clnstrt/python:3.11 python script.py
+docker run --rm -v $(pwd):/app -w /app ghcr.io/clnstrt/python:latest python script.py
 ```
 
 ### Accessing a Shell in the Development Variant
 ```sh
-docker run -it --entrypoint /bin/bash ghcr.io/clnstrt/python:3.11
+docker run -it --entrypoint /bin/bash ghcr.io/clnstrt/python:latest
 ```
 
 ### Installing Packages in Development Variant
 ```sh
-docker run -it --user root --entrypoint /bin/bash ghcr.io/clnstrt/python:3.11
+docker run -it --user root --entrypoint /bin/bash ghcr.io/clnstrt/python:latest
 ```
 
 > ⚠️ **Note:** Running containers as root is not recommended in production environments.
